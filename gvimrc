@@ -8,6 +8,7 @@ set viminfo='20,<50,s10,h,n$HOME/.viminfo
 
 set lines=36 "set size of gvim window
 set co=90    "set width of gvim window
+set guioptions-=T
 
 "From http://www.vim.org/tips/tip.php?tip_id=1235
 "This only works  when vim was compiled with python support
