@@ -12,9 +12,10 @@ set guioptions-=T
 
 "From http://www.vim.org/tips/tip.php?tip_id=1235
 "This only works  when vim was compiled with python support
-"USe it like this :Calc 2+3 (much more complicated expressions should work)
-:command! -nargs=+ Calc :py print <args>
-:py from math import * 
+"Use it like this :Calc 2+3 (much more complicated expressions should work)
+"Use py instead of py3 if gvim is compiled with old python support
+:command! -nargs=+ Calc :py3 print( <args>)
+:py3 from math import * 
 
 "sets the gvim titlebar to the expansion of SystemRoot
 "let &titlestring = expand("$SystemRoot")
