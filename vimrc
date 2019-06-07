@@ -47,8 +47,9 @@ set wildmenu
 set showmatch
 
 "set guifont=courier_new:h11 "this is how to do it
+set cm=blowfish
 
-if ($COLORTERM == " ") || ($COLORTERM == "mate-terminal")
+if ($COLORTERM == " ") || ($COLORTERM == "mate-terminal") || empty($COLORTERM)
     set bg=dark
 endif
 
@@ -89,6 +90,8 @@ map ,t :echo strftime("%c")<CR>
 
 "In insert mode press Ctrl-F to make the word before the cursor uppercase
 map! <C-F> <Esc>gUiw`]a
+
+imap jj <ESC>
 
 "from http://www.highley-recommended.com/text-processing.html
 "integrate aspell spelling checker
